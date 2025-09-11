@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anatomia</title>
+   <link rel="stylesheet" href="style2.css">
+  </head>
+  <body>
+    <header>
+        <div class="começo">
+      <h1>Anatomia de uma Página HTML5</h1>
+      <p>Parte 2: Formulário e Texto</p>
+    </div>
+      <nav>
+        <a href="index.html">⬅️ Voltar para Parte 1</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="card">
+        <h2>Aprofundando o Conhecimento</h2>
+        <p>
+          Nesta segunda parte, exploramos tags essenciais para a interatividade
+          (Formulário) e para dar um significado ainda mais rico ao conteúdo
+          textual.
+        </p>
+      </div>
+
+      <section id="formulario">
+        <h3>Formulário Interativos: Coletando Dados</h3>
+        <div class="card tag-highlight">
+          <form action="">
+            <fieldset>
+              <legend>Informações Pessoais</legend>
+
+              <label for="nome">Nome Completo:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Ex:Ana Silva"
+              />
+
+              <label for="nascimento">Data de Nascimento:</label>
+              <input type="date" id="nascimento" name="nascimento" />
+
+              <label for="nome"
+                >Cursos de Interrese (com autocomplementar)</label
+              >
+              <input list="cursos"
+                type="text"
+                id="nome"
+                name="nome"
+              />
+              <datalist id="cursos">
+                <option value="Desenvolvimento Web"></option>
+                <option value="Design UX/UI"></option>
+                <option value="Ciência de Dados"></option>
+                <option value="Marketing Digital"></option>
+              </datalist>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Preferências</legend>
+                <label for="nome">Área de Foco (com lista dropdown)</label>
+                <label for="">Selecione uma opção</label>
+                <select name="example">
+                    <option value="option1"></option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                  <label for="">Nível de Experiencia</label>
+                  <input type="radio">
+                  <label for="">Iniciante</label>
+                  <input type="radio">
+                  <label for="">Intermediario</label>
+                  <input type="radio">
+                  <label for="">Avançado</label>
+
+                  <label for="">Tecnologia e Interrese:</label>
+                  <input type="checkbox">
+                  <label for="">HTML & CSS</label>  
+                  <input type="checkbox">
+                  <label for="">JavaScript</label>  
+                  <input type="checkbox">
+                  <label for="">React</label>  
+            </fieldset>
+          </form>
+          <aside>
+            <p><p>O formulário agora combina múltiplos elementos: <code>&lt;datalist&gt;</code> para autocompletar, e <code>&lt;select&gt;</code> para uma lista fechada de opções.</p>
+            <p>Para escolhas, usamos <code>&lt;input type="radio"&gt;</code> (escolha única) e <code>&lt;input type="checkbox"&gt;</code> (múltipla escolha).</p>
+            <p>A tag <code>&lt;output&gt;</code> exibe dinamicamente o valor do <code>&lt;input type="range"&gt;</code>, criando uma experiência interativa.</p>
+            <p>Note também os atributos <code>placeholder</code>, que exibe um texto de ajuda no campo, e <code>required</code>, que torna seu preenchimento obrigatório.</p></p>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
